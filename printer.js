@@ -68,6 +68,7 @@ function printTicket(payload = {}) {
       .text(`Nombre: ${p.name || ''}`)
       .text(`DPI: ${p.dpi || ''}`)
       .text(`Servicio: ${p.service || ''}`)
+      .text(`Fecha/Hora: ${p.dateTime || ''}`)
       .drawLine();
 
     if (p.footer) printer.text(p.footer);
